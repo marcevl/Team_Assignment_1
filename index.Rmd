@@ -10,8 +10,8 @@
 #
 ###### Original plots: https://public.tableau.com/profile/kimberly.pearson#!/vizhome/StevensonBusinessSurvey/Story1
 
-```{r}
-link='https://github.com/marcevl/Team-Assignments/raw/master/Internet.rda'
+```{r message=FALSE, warning=FALSE}
+link='https://github.com/marcevl/Team-Assignments/raw/master/Internet.RData'
 load(file=url(link))
 
 library(ggplot2)
@@ -43,7 +43,7 @@ box5 = box4 + scale_y_continuous(breaks=seq(0,100, 10),
 
 box5
 ```
-```{r}
+```{r message=FALSE, warning=FALSE}
 
 box1 = ggplot(Internet, aes(x= ISP, y = Upload.Speed)) 
 
